@@ -11,5 +11,5 @@
   <%= link_to 'Destroy Comment', [comment.article, comment],
                method: :delete,
                data: { confirm: 'Are you sure?' } %>
+  <%= link_to 'Show', article_comment_path(comment.article, comment) %>
 </p>
-<td><%= link_to 'Show', article_comment_path(comment.article, comment) %></td>
